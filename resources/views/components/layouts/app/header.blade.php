@@ -15,6 +15,9 @@
                 <flux:navbar.item icon="layout-grid" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
                     Dashboard
                 </flux:navbar.item>
+                <flux:navbar.item icon="home-modern" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
+                    Dasar Hukum
+                </flux:navbar.item>
             </flux:navbar>
 
             <flux:spacer />
@@ -23,7 +26,7 @@
                 <flux:tooltip content="Search" position="bottom">
                     <flux:navbar.item class="!h-10 [&>div>svg]:size-5" icon="magnifying-glass" href="#" label="Search" />
                 </flux:tooltip>
-                <flux:tooltip content="Repository" position="bottom">
+                {{-- <flux:tooltip content="Repository" position="bottom">
                     <flux:navbar.item
                         class="h-10 max-lg:hidden [&>div>svg]:size-5"
                         icon="folder-git-2"
@@ -40,7 +43,7 @@
                         target="_blank"
                         label="Documentation"
                     />
-                </flux:tooltip>
+                </flux:tooltip> --}}
             </flux:navbar>
 
             <!-- Desktop User Menu -->
