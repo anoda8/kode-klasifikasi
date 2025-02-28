@@ -13,7 +13,7 @@
 
             <flux:navbar class="-mb-px max-lg:hidden">
                 <flux:navbar.item icon="layout-grid" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
-                    Dashboard
+                    Katalog Klasifikasi
                 </flux:navbar.item>
                 <flux:navbar.item icon="home-modern" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
                     Dasar Hukum
