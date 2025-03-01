@@ -10,6 +10,6 @@ class Klasifikasi extends Component
 
     public function render()
     {
-        return view('livewire.front.klasifikasi')->layout('components/layouts/front');
+        return view('livewire.front.klasifikasi');
     }
 }

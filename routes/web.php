@@ -15,9 +15,12 @@ Route::middleware(['auth'])->group(function () {
     Route::view('dashboard','dashboard')->name('dashboard');
 });
 
-// Route::middleware(['middleware' => ['role:admin']], function(){
+Route::get('klasifikasi', \App\Livewire\Front\Klasifikasi::class)->name('klasifikasi');
+Route::get('dasar-hukum', \App\Livewire\Front\DasarHukum::class)->name('dasar-hukum');
 
-// });
+Route::middleware(['role:admin'])->group(function(){
+    Route::get('bookmark', \App\Livewire\User\Bookmark::class)->name('bookmark');
+});
 
 // Route::middleware(['middleware' => ['role:admin']], function(){
 

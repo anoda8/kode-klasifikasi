@@ -12,13 +12,13 @@
             </a>
 
             <flux:navbar class="-mb-px max-lg:hidden">
-                <flux:navbar.item icon="home-modern" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
+                <flux:navbar.item icon="home-modern" href="{{ route('bookmark') }}" :current="request()->routeIs('bookmark')" wire:navigate>
                     Bookmark
                 </flux:navbar.item>
-                <flux:navbar.item icon="layout-grid" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
+                <flux:navbar.item icon="layout-grid" href="{{ route('klasifikasi') }}" :current="request()->routeIs('klasifikasi')" wire:navigate>
                     Katalog Klasifikasi
                 </flux:navbar.item>
-                <flux:navbar.item icon="home-modern" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
+                <flux:navbar.item icon="home-modern" href="{{ route('dasar-hukum') }}" :current="request()->routeIs('dasar-hukum')" wire:navigate>
                     Dasar Hukum
                 </flux:navbar.item>
                 <flux:navbar.item icon="home-modern" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
