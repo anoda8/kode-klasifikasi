@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Front;
 
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class Klasifikasi extends Component
@@ -10,6 +11,9 @@ class Klasifikasi extends Component
 
     public function render()
     {
-        return view('livewire.front.klasifikasi');
+        if(Auth::check()){
+            return view('livewire.front.klasifikasi');
+        }
+        return view('livewire.front.klasifikasi')->layout('components.layouts.front');
     }
 }
